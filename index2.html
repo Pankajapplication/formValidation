@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>ICAI - The Institute of Chartered Accountants of India</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <script src="http://35.154.239.225/assets/js/jquery.min.js"></script>
+    <!-- Favicons -->
+    <link href="https://cdnicai.s3.ap-south-1.amazonaws.com/images/favicon.ico" rel="icon" />
+
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" /> -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;500;600&family=Roboto:wght@300&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <!-- Vendor CSS Files -->
+    <link href="http://35.154.239.225/assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="http://35.154.239.225/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://35.154.239.225/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="http://35.154.239.225/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="http://35.154.239.225/assets/css/style.css" rel="stylesheet" />
+    <link href="http://35.154.239.225/assets/css/custom.css" rel="stylesheet" />
+    <!--   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"> -->
+    <link rel="stylesheet" href="http://35.154.239.225/assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .icai-marquee{
+            position: relative;
+            height:2224px;
+        }
+        .icai-events{
+            height: unset!important;
+        }
+        .markqst {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            position: absolute;
+            animation: marquee 10s linear infinite;
+        }
+        .markqst:hover{
+            animation-play-state: paused;
+        }
+        @keyframes marquee {
+            0% {
+                top: 0;
+            }
+            100% {
+                top: -100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="icai-header">
+        <div class="container">
+            <div class="header-logo-sec">
+                <div class="logo p-1">
+                    <a href="https://www.icai.org"><img class="img-fluid"
+                            src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/category_image/logo-icai_2.png"
+                            alt="icai logo"></a>
+                </div>
+                <div class="logo-text">
+                    <h2>ACCOUNTING STANDARDS BOARD</h2>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="search-bar">
+                        <!-- <form class="d-flex">
+                            <input class="form-control me-2 shadow-none" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn shadow-none" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form> -->
+                        <form method="post" action="" id="web_search" class=" position-relative"
+                            style="display: flex; ">
+                            <div class="form-group serach_desk position-relative" style="margin-right: 0.5rem;">
+                                <input type="text" autocomplete="off" name="search_text" placeholder="Search in website"
+                                    class=" form-control me-2 shadow-none input_search d_n" id="search_q"
+                                    onkeyup="search_website()">
+                                <div id="searchResult"
+                                    style="position: absolute;height: 45vh;background: #fff;overflow: auto; z-index:9;">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-b-n me-2" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo01" id="sub_btn">
+                                <i class="fa fa-search" style="font-size:20px;color:#fff;"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div>
+                        <!-- https://www.icai.org/post/accounting-standards-board -->
+                        <a href="https://www.icai.org/post/accounting-standards-board">
+                            <div class="logo-text text-center p-2">
+
+                                <img class="img-fluid"
+                                    src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/category_image/ASB0.png">
+                                <!-- <h6>ACCOUNTING STANDARDS BOARD </h6> -->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icai-nav-header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark header-navbar">
+                    <div class="container-fluid">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="http://35.154.239.225/">Home </a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        aria-expanded="false">
+                                        About Us </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                        <li><a class="dropdown-item"
+                                                href="http://35.154.239.225/index.php/web/home/about"> About ASB </a>
+                                        </li>
+
+                                        <li><a class="dropdown-item" href="https://www.icai.org/post/tor-asb">
+                                                Functions/Objectibves/Terms of Reference </a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="http://35.154.239.225/index.php/web/home/board_composition"> Board
+                                                Composition </a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="http://35.154.239.225/index.php/web/home/checklist_and_format/activity_report">
+                                                Annual Reports </a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        aria-expanded="false">
+                                        Certificate Course </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                        <li><a class="dropdown-item"
+                                                href="https://www.icai.org/post.html?post_id=3562&c_id=266"> About
+                                                Certificate Course on Ind AS </a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="https://asb.icai.org/index.php/web/home/specialized_member"> List
+                                                of Qualified Members </a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        aria-expanded="false">
+                                        Knowledge Dissemination Activities </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                        <li><a class="dropdown-item"
+                                                href="https://www.icai.org/post/refresher-courses-asb"> Refresher
+                                                Courses </a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="https://www.icai.org/post/asb-conference-events"> Details of Past
+                                                Seminar & Events </a></li>
+
+                                        <li><a class="dropdown-item" href="https://learning.icai.org/committee/asb/">
+                                                Other E-Learning Initiative </a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="https://www.icai.org/post/icai-asb-educational-vdeos"> Educational
+                                                Videos </a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        aria-expanded="false">
+                                        Publications </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                        <li><a class="dropdown-item"
+                                                href="https://www.icai.org/post.html?post_id=15769"> Accounting
+                                                Standards(AS) </a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="https://www.icai.org/post.html?post_id=15770"> Indain Accounting
+                                                Standards (Ind AS) </a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="https://www.icai.org/post/other-publications-accounting-standards-board">
+                                                Other Publications </a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        aria-expanded="false">
+                                        Checklists & Formats </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                        <li><a class="dropdown-item"
+                                                href="http://35.154.239.225/index.php/web/home/checklist_and_format/checklists">
+                                                CHECKLISTS </a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="http://35.154.239.225/index.php/web/home/checklist_and_format/formats">
+                                                FORMATS </a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        aria-expanded="false">
+                                        Knowledge Gateway </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                        <li><a class="dropdown-item"
+                                                href="https://www.icai.org/post/asb-meetings-updates"> ASB Meetings
+                                                updates </a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="https://www.icai.org/post/effective-date-of-ind-as-amendments">
+                                                Effective date of Ind AS Amendments </a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="https://resource.cdn.icai.org/58926asb48064.pdf"> Accounting
+                                                Standards Setters outside India </a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="https://www.icai.org/post/ifrs-convergence-status-indian-accounting-standards">
+                                                IFRS Convergence Status of Indian Accounting Standards </a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="https://resource.cdn.icai.org/70308asb56208.pdf"> Torch Bearers of
+                                                Accounting Standards Boards of ICAI </a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="https://www.icai.org/post/circulars-notification-pressreleases-issued-by-regulatory-bodies">
+                                                Ciruclars/Notification/Press releases issued by regulatory Bodies </a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page"
+                                        href="http://35.154.239.225/index.php/web/home/contact">Contact Us </a>
+                                </li>
+
+                                <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                                Certificate Course
+                            </a>
+        
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#"> About Certificate Course on Ind AS (currently under Knowledge dissemination 
+                                activities - Certificate Course on Ind AS) </a></li>
+                              <li><a class="dropdown-item" href="#">List of Qualified Members (Currently as main Category - IND AS Qualified 
+                                members  </a></li>
+                           
+                            </ul>
+                          </li>
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                                Knowledge Dissemination Activities
+                            </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">  Refresher Courses</a></li>
+                              <li><a class="dropdown-item" href="#"> Details of Past Seminar & Events</a></li>
+                              <li><a class="dropdown-item" href="#"> Other E-Learning Initiative</a></li>
+                              <li><a class="dropdown-item" href="#">Educational Videos</a></li>
+                             
+                            </ul>
+                          </li>
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                                Publications
+                            </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">  Accounting Standards(AS)</a></li>
+                              <li><a class="dropdown-item" href="#"> Indain Accounting Standards (Ind AS)</a></li>
+                              <li><a class="dropdown-item" href="#">  Other Publications</a></li> 
+                            </ul>
+                          </li>
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                                Knowledge Gateway
+                            </a>
+
+                     
+                            
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">  Accounting Standards Setters outside India </a></li>
+                              <li><a class="dropdown-item" href="#"> IFRS Convergence Status of Indian Accounting Standards </a></li>
+                              <li><a class="dropdown-item" href="#">  ASB Meetings updates, Effective date of Ind AS Amendments </a></li> 
+                              <li><a class="dropdown-item" href="#">  Torch Bearers of Accounting Standards Boards of ICAI </a></li> 
+                              <li><a class="dropdown-item" href="#">   Ciruclars/Notification/Press releases issued by regulatory Bodies </a></li> 
+                            </ul>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                          </li>
+                          -->
+                            </ul>
+                            <!-- <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form> -->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="box-collapse">
+        <div class="title-box-d">
+            <h3 class="title-d">Search...</h3>
+        </div>
+        <span class="close-box-collapse right-boxed bi bi-x"></span>
+        <div class="box-collapse-wrap form">
+            <form class="form-a">
+                <div class="row">
+                    <div class="col-md-12 mb-2" id="desktop_none">
+                        <div class="form-group">
+                            <label class="pb-2" for="Type">Search</label>
+                            <input type="text" class="form-control form-control-lg form-control-a"
+                                placeholder="Search...">
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 m-auto mb-2">
+                        <div class="form-group mt-3">
+                            <h3 class="pt-4 "><span class="color-b">ICAI </span> Links</h3>
+                            <ul class="side_ul">
+                                <li><a href="https://www.icai.org/post/central-council-library">Central Council
+                                        Library</a></li>
+                                <li><a href="https://www.icai.org/post/covid19-resource-page">Covid 19 Resource</a></li>
+                                <li><a href="https://www.icai.org/post/election-2021">Election - 2021</a></li>
+                                <li><a href="https://www.icai.org/category/e-journal">e-Journal</a></li>
+                                <li><a href="https://www.icai.org/post/icai-eoi-tenders">EOI/Tenders</a></li>
+                                <li><a href="https://www.icai.org/ICAIWALL.html">ICAI Wall - Apps & Portals</a></li>
+                                <li><a href="https://www.icai.org/post/institute-program">Institute's Program</a></li>
+                                <li><a href="https://www.icai.org/post/know-your-ethics">Know Your Ethics</a></li>
+                                <li><a href="https://cmib.icai.org/">Placements</a></li>
+                                <li><a href="https://www.icai.org/category/notifications">Notifications</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ======= Header/Navbar ======= -->
+    <style>
+        #searchResult ul li {
+            border-bottom: 1px dotted rgb(1, 0, 102, 1);
+            padding: 0px 5px;
+        }
+
+        #searchResult ul li:hover {
+            background: rgb(1, 0, 102, 1);
+        }
+
+        #searchResult ul li:hover a {
+            color: #fff;
+        }
+    </style>
+    <!-- <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand text-brand" href="https://www.icai.org">
+        <img class="logo_img " src="http://35.154.239.225/assets/img/logo-icai_2.png" >
+      
+        
+      </a>
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="http://35.154.239.225/index.php/web/home/index">Home</a>
+          </li>
+
+          
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item " href="http://35.154.239.225/index.php/web/home/about">About ASB</a>  
+             
+              <a class="dropdown-item " href="https://www.icai.org/post/tor-asb">Functions / Objectives / Terms of Reference</a>
+              <a class="dropdown-item " href="http://35.154.239.225/index.php/web/home/board_composition">Board Composition</a>
+            </div>
+          </li> 
+
+        <li class="nav-item">
+            <a class="nav-link " href="http://35.154.239.225/index.php/web/home/forthcoming">Forthcoming Events </a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="http://35.154.239.225/index.php/web/home/specialized_member" >IND AS Qualified Members</a>            
+          </li>
+           
+           <li class="nav-item">
+            <a class="nav-link " href="http://35.154.239.225/index.php/web/home/photo_gallery">Photo Gallery</a>
+          </li> 
+           <li class="nav-item">
+            <a class="nav-link " href="http://35.154.239.225/index.php/web/home/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="" style="display: flex;">
+      <div style="margin-right: 0.5rem;" class="mobile_none">
+        <form method="post" action="" id="searchsubmit" class=" position-relative">
+          <input type="text" name="search" placeholder="Search here..." class="input_search form-control " id="search">
+          <img class="bi bi-search iclas_search" src="http://35.154.239.225//assets/img/jagruti_logo.png" width="42px"> 
+        </form>
+      </div>
+
+      <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse me-2" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" style="height: 36px;">
+        <i class="bi bi-justify-left" style="font-size:20px;color:#fff;"></i>
+      </button></div>
+     <form method="post" action="" id="web_search" class=" position-relative" style="display: flex; ">
+        <div class="form-group serach_desk position-relative"style="margin-right: 0.5rem;">
+            <input type="text" autocomplete="off" name="search_text" placeholder="Search in website" class="input_search d_n" id="search_q" value="">
+            <div id="searchResult" style="position: absolute;height: 45vh;background: #fff;overflow: auto;"></div>
+        </div>
+        <button type="submit" class="btn btn-b-n me-2" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" id="sub_btn">
+          <i class="fa fa-search" style="font-size:20px;color:#fff;"></i>
+        </button>
+    </form> 
+     <div class="d_non_768" style="padding-left: 15px;text-align: center;" >
+       <a class="navbar-brand text-brand" href="https://www.icai.org/post/accounting-standards-board" style="margin:0;"><img height="80px" width="120px" class="logo_img pull-right" src="http://35.154.239.225/assets/img/ASB0.png" style="padding-left: 15px;"></a>
+      <div class="img-fluid">
+        <p style="color: red;"><b>Accounting Standards Board (ASB)</b></p>
+      </div>
+     </div>
+    </div>
+  </nav> -->
+
+
+
+    <script>
+        function search_website() {
+            var search_q = $('#search_q').val();
+            $('#searchResult').html('');
+        }
+
+        $("#searchsubmit").submit(function (event) {
+            event.preventDefault();
+            var data = btoa($('#search').val());
+            window.location.href = 'https://jagruti.icai.org/?q=' + data + '&c=QVNC';
+        });
+
+        $(".iclas_search").click(function () {
+            event.preventDefault();
+            var data = btoa($('#search').val());
+            window.location.href = 'https://jagruti.icai.org/?q=' + data + '&c=QVNC';
+        });
+
+        $('#web_search').submit(function (e) {
+            e.preventDefault();
+            var search = $(this).val();
+            var html = "";
+            $.ajax({
+                url: "http://35.154.239.225/index.php/web/home/dynamic_search",
+                method: "POST",
+                data: { search: search },
+                success: function (data) {
+                    var cal = JSON.parse(data);
+                    //console.log(cal, typeof(cal) );
+                    for (var i in cal) {
+                        if (cal[i].url == '') {
+                            html += `<li><a href='http://35.154.239.225/index.php/web/home/photo_gallery' > ${cal[i].name} </a></li>`
+                        } else {
+                            html += `<li><a href=${cal[i].url} > ${cal[i].name} </a></li>`
+                        }
+                    }
+                    $('#searchResult').html(`<ul>${html}</ul>`)
+                }
+            })
+
+        });
+
+
+    </script>
+
+
+    <section class="icai-banner-section py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-5 mb-3">
+                    <div class="bg-light p-2">
+                        <div class="row">
+
+                            <div class="col-6 mb-3">
+                                <div class="icai-emp-card">
+                                    <div class="emp-img">
+                                        <img class="img-fluid"
+                                            src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/Skype_Picture_2024_05_24T07_51_22_870Z.jpeg"
+                                            alt="CA. Ranjeet Kumar Agarwal">
+                                    </div>
+                                    <h6>CA. Ranjeet Kumar Agarwal</h6>
+                                    <p> President, (Ex-officio)</p>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="icai-emp-card">
+                                    <div class="emp-img">
+                                        <img class="img-fluid"
+                                            src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/Skype_Picture_2024_05_24T07_52_45_926Z.jpeg"
+                                            alt="CA. Charanjot Singh Nanda">
+                                    </div>
+                                    <h6>CA. Charanjot Singh Nanda</h6>
+                                    <p>Vice President, (Ex- officio)</p>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="icai-emp-card">
+                                    <div class="emp-img">
+                                        <img class="img-fluid"
+                                            src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/Skype_Picture_2024_05_24T07_51_21_502Z.jpeg"
+                                            alt="CA. Pramod Jain">
+                                    </div>
+                                    <h6>CA. Pramod Jain</h6>
+                                    <p>Chairman, ASB</p>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="icai-emp-card">
+                                    <div class="emp-img">
+                                        <img class="img-fluid"
+                                            src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/Skype_Picture_2024_05_24T07_51_24_772Z.jpeg"
+                                            alt="CA. Abhay Chhajed">
+                                    </div>
+                                    <h6>CA. Abhay Chhajed</h6>
+                                    <p>Vice Chairman, ASB</p>
+                                </div>
+                            </div>
+                            <!-- <div class="col-6 mb-3">
+                                <div class="icai-emp-card">
+                                    <img src="http://35.154.239.225/assets/img/CA.-Abhay-Kumar-Chhajed.jpg" alt="Charanjot Singh Nanda">
+                                    <h6>CA. Charanjot Singh Nanda</h6>
+                                    <p> Vice-President, ICAI</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="icai-emp-card">
+                                    <img src="http://35.154.239.225/assets/img/CA.-Abhay-Kumar-Chhajed.jpg" alt="CA Parmod Jain">
+                                    <h6>CA. Pramod Jain</h6>
+                                    <p>  Chairman, ASB</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="icai-emp-card">
+                                    <img src="http://35.154.239.225/assets/img/Pramodjain.jpg" alt="CA Abhay Chhajed">
+                                    <h6>CA. Abhay Chhajed</h6>
+                                    <p>  Vice-Chairman, ASB</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-7">
+                    <div class="banner-carousel-sec">
+
+                        <div class="owl-carousel owl-theme banner-carousel">
+                            <div class="item">
+                                <div class="carsol-img">
+                                    <a
+                                        href="https://test.educrypt.ai/test_landing_page/icai-institute/images/banner.png">
+                                        <img class="img-fluid"
+                                            src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/category_image/caindia_banner.jpeg"
+                                            alt="Banner 4"> </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carsol-img">
+                                    <a
+                                        href="https://test.educrypt.ai/test_landing_page/icai-institute/images/banner.png">
+                                        <img class="img-fluid"
+                                            src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/category_image/OCPhoto.738740934.494702.jpeg"
+                                            alt="Banner 3"> </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carsol-img">
+                                    <a
+                                        href="https://test.educrypt.ai/test_landing_page/icai-institute/images/banner.png">
+                                        <img class="img-fluid"
+                                            src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/category_image/78931newp-vp-2024-25-banner2.jpeg"
+                                            alt="Banner 2"> </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="carsol-img">
+                                    <a
+                                        href="https://test.educrypt.ai/test_landing_page/icai-institute/images/2nd_day_celebration.jpeg">
+                                        <img class="img-fluid"
+                                            src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/category_image/2nd_day_celebration1.jpeg"
+                                            alt="Banner1"> </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="icai-subcatagroy py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="icai-events upcomingeve">
+                        <div class="events-title">
+                            <h4>
+                                <span><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                <span>Forthcoming Events</span>
+                            </h4>
+                        </div>
+
+                        <div class="event-carousel-sec">
+                            <div class="owl-carousel owl-theme event-carousel">
+                                <div class="item">
+                                    <div class="event-test">
+                                        <a href="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/5th%20June%202023%20Flyer%20%2831-05-2023%29%20ASB.pdf"
+                                            target="_blank">
+                                            <p>Webinar on Cash Flow Statements : Classification and Disclosure issues on
+                                                5.06.23 from 5.00-7.00 pm</p>
+                                        </a>
+                                        <img class="img-fluid" alt=""
+                                            src="https://resource.cdn.icai.org/7829new_27apr07.gif" style="width:30px;">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="event-test">
+                                        <a href="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/WhatsApp%20Image%202023-05-29%20at%2015.33.02.pdf"
+                                            target="_blank">
+                                            <p>Program on Importance of Accounting in Audit Trail, Audit Report,
+                                                Certificate & Accounting Standards at Mumbai on June 2 & 3, 2023</p>
+                                        </a>
+                                        <img class="img-fluid" alt=""
+                                            src="https://resource.cdn.icai.org/7829new_27apr07.gif" style="width:30px;">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="event-test">
+                                        <a href="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/PS%2003.06.2023.pdf"
+                                            target="_blank">
+                                            <p>Workshop on Indian Accounting Standards and Accounting Standards at
+                                                Pimpri Chinchwad on 3rd June 2023</p>
+                                        </a>
+                                        <img class="img-fluid" alt=""
+                                            src="https://resource.cdn.icai.org/7829new_27apr07.gif" style="width:30px;">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="event-test">
+                                        <a href="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/A12%20Result.pdf"
+                                            target="_blank">
+                                            <p>Declaration of result of the online examination (A12) of the ‘Certificate
+                                                Course on Indian Accounting Standards (Ind AS)’ held on 7th May,2023.
+                                            </p>
+                                        </a>
+                                        <img class="img-fluid" alt=""
+                                            src="https://resource.cdn.icai.org/7829new_27apr07.gif" style="width:30px;">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="event-test">
+                                        <a href="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/Seminar%2020.05.pdf"
+                                            target="_blank">
+                                            <p>Workshop on Accounting Standards at Alwar on 20th May 2023</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="event-test">
+                                        <a href="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/15th%20May%202023%20Flyer%20%2815-05-2023%29.pdf"
+                                            target="_blank">
+                                            <p>Webinar on “Accounting treatment for different types of Contingencies and
+                                                the Impact of Prior Period Adjustments on Financial Statements” on
+                                                15.05.23 from 5.00-7.00 pm</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="event-test">
+                                        <a href="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/Batch%20Announcement%20for%20Website.pdf"
+                                            target="_blank">
+                                            <p>Launch of 'Certificate Course on Indian Accounting Standards (Ind AS)' -
+                                                Online Batch 47 - Starting 17th June 2023</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="event-test">
+                                        <a href="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/Website%20Announcement%20-%20Batch%2046.pdf"
+                                            target="_blank">
+                                            <p>Launch of 'Certificate Course on Indian Accounting Standards (Ind AS)' -
+                                                Online Batch 46 - Starting 27th May 2023</p>
+                                        </a>
+                                        <img class="img-fluid" alt=""
+                                            src="https://resource.cdn.icai.org/7829new_27apr07.gif" style="width:30px;">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="event-test">
+                                        <a href="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/Batch%2045%20Announcement%20for%20Website.pdf"
+                                            target="_blank">
+                                            <p>Launch of ‘Certificate Course on Indian Accounting Standards (Ind AS)’
+                                                (Online Batch 45) starting from 13th May,23</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- <div class="item">
+                                <div class="event-test">
+                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos expedita consequuntur repudiandae inventore cupiditate maiores ut eveniet hic ullam eligendi?
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos expedita consequuntur repudiandae inventore cupiditate maiores ut eveniet hic ullam eligendi?
+                                     </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="event-test">
+                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos expedita consequuntur repudiandae inventore cupiditate maiores ut eveniet hic ullam eligendi?
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos expedita consequuntur repudiandae inventore cupiditate maiores ut eveniet hic ullam eligendi?
+                                     </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="event-test">
+                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos expedita consequuntur repudiandae inventore cupiditate maiores ut eveniet hic ullam eligendi?
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos expedita consequuntur repudiandae inventore cupiditate maiores ut eveniet hic ullam eligendi?
+                                     </p>
+                                </div>
+                            </div> -->
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <div class="view-btn text-center">
+                                <a href="http://35.154.239.225/index.php/web/home/forthcoming"
+                                    class="btn shadow-none">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="icai-events">
+                        <div class="events-title">
+                            <h4>
+                                <span><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+                                <span> About the Board </span>
+                            </h4>
+                        </div>
+                        <div>
+                            <div class="scrolldata">
+                                <p>The Accounting Standards Board (ASB) was constituted by the ICAI in 1977 with a view
+                                    to formulate Accounting Standards to provide a sound, reliable and high-quality
+                                    accounting, and financial reporting system and to harmonise the diverse accounting
+                                    policies and practices in India. The ASB, since its inception, has been constantly
+                                    working in this direction by formulating new Accounting Standards as well as
+                                    revising the existing Accounting Standards from time to time with the objective to
+                                    bring the Standards in line with the International Financial Reporting Standards
+                                    (IFRS), as issued by the International Accounting Standards Board (IASB). The ASB
+                                    with a view to provide guidance on the uniform applications of the Accounting
+                                    Standards in an increasingly complex business environment, also issues various
+                                    guidance materials from time to time.</p>
+                            </div>
+                        </div>
+                        <div class="view-btn">
+                            <a href="http://35.154.239.225/index.php/web/home/about" class="btn shadow-none">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icai-events">
+                        <div class="events-title">
+                            <h4>
+                                <span><i class="fa fa-link" aria-hidden="true"></i></span>
+                                <span>What’s new. </span>
+                            </h4>
+                        </div>
+                        <div class="icai-marquee">
+                            <div class="markqst">
+                                <div class="whats-link">
+                                    <a
+                                        href="https://www.icai.org/post/request-for-information-on-post-implementation-review-of-ifrs-9-financial-instruments">First </a>
+                                </div>
+
+                                <div class="whats-link">
+                                    <a href="https://www.icai.org/new_event.html?event=7058">Webinar on Cash Flow
+                                        Statements : Classification and Disclosure issues on 5.06.23 from 5.00-7.00
+                                        pm</a>
+                                    <img class="img-fluid" alt=""
+                                        src="https://resource.cdn.icai.org/7829new_27apr07.gif">
+                                </div>
+
+                                <div class="whats-link">
+                                    <a href="https://resource.cdn.icai.org/74189asb60123a.rar">Excel File for
+                                        Illustrative formats for Financial Statements of NPOs</a>
+                                    <img class="img-fluid" alt=""
+                                        src="https://resource.cdn.icai.org/7829new_27apr07.gif">
+                                </div>
+
+                                <div class="whats-link">
+                                    <a href="https://resource.cdn.icai.org/74188asb60123.pdf">Technical Guide on
+                                        Accounting for NPOs</a>
+                                    <img class="img-fluid" alt=""
+                                        src="https://resource.cdn.icai.org/7829new_27apr07.gif">
+                                </div>
+
+                                <div class="whats-link">
+                                    <a href="https://www.icai.org/new_event.html?event=7041">Program on Importance of
+                                        Accounting in Audit Trail, Audit Report, Certificate & Accounting Standards at
+                                        Mumbai on June 2 & 3, 2023</a>
+                                    <img class="img-fluid" alt=""
+                                        src="https://resource.cdn.icai.org/7829new_27apr07.gif">
+                                </div>
+
+                                <div class="whats-link">
+                                    <a
+                                        href="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/PS%2003.06.2023.pdf">Workshop
+                                        on Indian Accounting Standards and Accounting Standards at Pimpri Chinchwad on
+                                        3rd June 2023</a>
+                                    <img class="img-fluid" alt=""
+                                        src="https://resource.cdn.icai.org/7829new_27apr07.gif">
+                                </div>
+
+                                <div class="whats-link">
+                                    <a href="https://resource.cdn.icai.org/74074asbresult190523.pdf">Declaration of
+                                        result of the online examination (A12) of the ‘Certificate Course on Indian
+                                        Accounting Standards (Ind AS)’ held on 7th May,2023.</a>
+                                    <img class="img-fluid" alt=""
+                                        src="https://resource.cdn.icai.org/7829new_27apr07.gif">
+                                </div>
+
+                                <div class="whats-link">
+                                    <a
+                                        href="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/Batch%20Announcement%20for%20Website.pdf">Launch
+                                        of 'Certificate Course on Indian Accounting Standards (Ind AS)' - Online Batch
+                                        47 - Starting 17th June 2023</a>
+                                </div>
+                                <div class="whats-link">
+                                    <a href="https://www.icai.org/post/compendium-of-indian-accounting-standards">Compendium
+                                        of Indian Accounting Standards (Year 2023-2024)</a>
+                                </div>
+
+                                <div class="whats-link">
+                                    <a href="https://www.youtube.com/watch?v=s3aqsW0-sTI">Role of Accounting Standards
+                                        and Financial Statements (Hindi)</a>
+                                    <img class="img-fluid" alt=""
+                                        src="https://resource.cdn.icai.org/7829new_27apr07.gif">
+                                </div>
+
+                                <div class="whats-link">
+                                    <a href="https://resource.cdn.icai.org/73590asb59423.pdf">MCA notified Companies
+                                        (Indian Accounting Standards) Amendment Rules, 2023</a>
+                                </div>
+
+                                <div class="whats-link">
+                                    <a href="https://www.icai.org/post/asb-indas-hindi-280223">Notified Ind AS in Hindi
+                                        as on 28.02.23.</a>
+                                </div>
+
+                                <div class="whats-link">
+                                    <a
+                                        href="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/Educational%20Matreial%20on%20Ind%20AS%2021.pdf">Educational
+                                        Material on Ind AS 21,Interim Financial Reporting </a>
+                                    <img class="img-fluid" alt=""
+                                        src="https://resource.cdn.icai.org/7829new_27apr07.gif">
+                                </div>
+                                <div class="whats-link">
+                                    <a
+                                        href="https://www.icai.org/post/exposure-drafts-of-guidance-note-on-fsnce-and-fsllp">Exposure
+                                        Drafts of Guidance Note on Financial Statements of Non-Corporate Entities and
+                                        Guidance Note on Financial Statements of Limited Liability Part</a>
+                                </div>
+
+                                <div class="whats-link">
+                                    <a href="https://resource.cdn.icai.org/72192asb58153.pdf">Accounting Standards (AS)
+                                        : Disclosures Checklist (Revised October, 2022) </a>
+                                </div>
+
+                                <div class="whats-link">
+                                    <a href="https://resource.cdn.icai.org/72130asb58096.pdf">Indian Accounting
+                                        Standards (AS) : Disclosures Checklist (Revised November, 2022) </a>
+                                    <img class="img-fluid" alt=""
+                                        src="https://resource.cdn.icai.org/7829new_27apr07.gif">
+                                </div>
+
+                                <div class="whats-link">
+                                    <a href="https://www.youtube.com/watch?v=xBzL78D657E">Video on Role of Accounting
+                                        Standards and Financial Statements</a>
+                                </div>
+
+                                <div class="whats-link">
+                                    <a
+                                        href="https://www.icai.org/post/release-of-compendium-of-indas-and-related-guidance-material-01apr2022">Release
+                                        of Compendium of Ind AS (as on April 01, 2022) and related guidance material</a>
+                                </div>
+
+                                <div class="whats-link">
+                                    <a href="https://www.icai.org/post/release-of-educational-material-on-indas-34">Release
+                                        of Educational Material on Ind AS 34, Interim Financial Reporting</a>
+                                </div>
+
+                                <div class="whats-link">
+                                    <a href="https://resource.cdn.icai.org/70861asb56826.pdf">Technical Guide on
+                                        Financial Statements of Limited Liability Partnerships</a>
+                                </div>
+
+                                <div class="whats-link">
+                                    <a href="https://www.icai.org/post.html?post_id=15772">Excel File for Illustrative
+                                        Financial Statements of Non-Corporate Entities</a>
+                                    <img class="img-fluid" alt=""
+                                        src="https://resource.cdn.icai.org/7829new_27apr07.gif">
+                                </div>
+
+                                <div class="whats-link">
+                                    <a
+                                        href="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/course_file_meta/Technical%20Guide%20on%20Financial%20Statements%20of%20Non-Corporate%20Entities.pdf">"Last"</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="view-btn text-center">
+                            <a href="http://35.154.239.225/index.php/web/home/whats_new" class="btn shadow-none">View
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* our services */
+
+        .icai-services a {
+            color: #000062;
+            text-decoration: none !important;
+        }
+
+        .services-title {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .services-title h3 {
+            color: #000062;
+            font-weight: 700;
+        }
+
+        .icai-open-links {
+            background-color: #000062;
+        }
+
+        .icai-open-links .links {
+            background: #fafafa;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .icai-open-links .links {
+            border-radius: 12px;
+            padding: 0 10px 10px;
+        }
+
+        .icai-open-links h1.section-heading {
+
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.6;
+            margin-top: 0;
+            color: #000062;
+            margin-left: 10px;
+        }
+
+        h1.section-heading .line {
+            border-top: 2px solid #666;
+            display: inline-block;
+            padding: 0 15px;
+            padding-top: 5px;
+        }
+
+        .icai-footer {
+            background-color: #000062;
+        }
+
+        .footer-logo {
+            padding: 10px;
+        }
+
+        .footer-logo img {
+            width: 1005;
+        }
+
+        .footer-logo h6 {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .footer-logo p {
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .footer-links h4 {
+            color: #fff;
+
+        }
+
+        .footer-links ul {
+            padding: 0 !important;
+        }
+
+        .footer-links ul li {
+            color: #fff;
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a {
+            color: #d1cece;
+        }
+
+        .footer-links ul li span {
+            font-size: 35px;
+            margin-right: 15px;
+        }
+    </style>
+
+
+
+
+    <section class="icai-open-links py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="links">
+                        <a href="https://asb.icai.org/index.php/web/home/photo_gallery">
+                            <h1 class="section-heading text-highlight"><span class="line" style="font-size:15px;"> Photo
+                                    Gallery </span></h1>
+                        </a>
+                        <div class="text-center">
+                            <a href="https://asb.icai.org/index.php/web/home/photo_gallery" target="_blank"><img
+                                    class="img-fluid" style="box-shadow:0px 0px 2px 2px #ccc;"
+                                    src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/category_image/675.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="links">
+                        <a href="https://asb.icai.org/quiz_admin">
+                            <h1 class="section-heading text-highlight"><span class="line" style="font-size:15px;">
+                                    Accounting Quiz </span></h1>
+                        </a>
+                        <div class="text-center">
+                            <a href="https://asb.icai.org/quiz_admin" target="_blank"><img class="img-fluid"
+                                    style="box-shadow:0px 0px 2px 2px #ccc;"
+                                    src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/category_image/65.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="links">
+                        <a href="https://asb.icai.org/index.php/web/home/open_for_comments">
+                            <h1 class="section-heading text-highlight"><span class="line" style="font-size:15px;">
+                                    Documents Open For Comments </span></h1>
+                        </a>
+                        <div class="text-center">
+                            <a href="https://asb.icai.org/index.php/web/home/open_for_comments" target="_blank"><img
+                                    class="img-fluid" style="box-shadow:0px 0px 2px 2px #ccc;"
+                                    src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/category_image/12.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="icai-services py-4">
+
+        <div class="container">
+            <div class="row">
+                <div class="services-title ">
+                    <h3>ICAI Services</h3>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://help.icai.org/">
+                        <div class="services-sec text-center">
+                            <img class="img-fluid"
+                                src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/category_image/eSahaayataa.jpg">
+                            <p>E- Sahaayataa Portal</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://icaitv.com/category.php?cat_id=30">
+                        <div class="services-sec text-center">
+                            <img class="img-fluid"
+                                src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/category_image/icai-tv.jpg">
+                            <p>ASB-ICAI TV(Webcast channel)</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://learning.icai.org/iDH/icai/">
+                        <div class="services-sec text-center">
+                            <img class="img-fluid"
+                                src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/category_image/digital-learning-hub.jpg">
+                            <p>Digital Learning Hub</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://icai-cds.org/">
+                        <div class="services-sec text-center">
+                            <img class="img-fluid"
+                                src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/category_image/cds.jpg">
+                            <p>For Ordering Publications</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <style type="text/css">
+    .bg_banner{background-image: linear-gradient( rgb(0 0 0 / 65%), rgb(0 0 0 / 80%)),url(http://35.154.239.225//assets/img/bnrr.webp);/*background-size: cover; */   background-position-x: center;}
+
+    .bg_banner2{background-image: linear-gradient( rgb(0 0 0 / 65%), rgb(0 0 0 / 80%)),url(http://35.154.239.225//assets/img/bn.webp);/*background-size: cover; */   background-position-x: center;}
+
+.bg_banner3{background-image: url(http://35.154.239.225//assets/img/banner.png);/*background-size: cover; */   background-position-x: center;}
+
+</style> -->
+    <!-- ======= Intro Section ======= -->
+    <!-- <section style="margin-top: 120px;">
+   <div style="background-image: linear-gradient( rgb(1 0 102), rgb(54 53 122))">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12">
+            <h1 class="text-light pt-3" style="font-weight: 700;">ACCOUNTING STANDARDS BOARD</h1>
+            <p class="text-light pb-2">ASB is an Accounting Standards-Setting arm of the ICAI, which formulates Accounting Standards through a process that is robust, comprehensive, and inclusive with a view to assisting the Council of the ICAI in evolving and establishing Accounting Standards to discharge its role of national standard-setter.
+            ASB also issues Accounting Standards for non corporate Entities.
+         
+         </div>
+      </div> 
+  </div>
+   </div>
+   <div class="container-fluid p-0">
+      <div class="row m-0">
+         <div class="col-md-12 p-0">
+            <div class="owl-carousel firstBanner banner-slider  owl-theme">
+
+
+            <div class="item slider_height">
+               
+               <a href="https://www.icai.org/new_post.html?post_id=2167" target="_blank"> <img src="http://35.154.239.225/assets/img/caindia_banner.jpeg" class="img_00"></a>
+
+       </div>
+       <div class="item slider_height">
+                
+                <a href="https://asb.icai.org/quiz_admin" target="_blank"> <img src="http://35.154.239.225/assets/img/webiste_quiz_bannerLink.png" class="img_00"></a>
+
+        </div>
+
+        <div class="item slider_height">
+        <a href=""><img src="https://resource.cdn.icai.org/78931newp-vp-2024-25-banner2.jpeg" alt="New President, ICAI &amp; Vice President, ICAI">
+      
+   </a>   
+      </div>
+              
+
+
+                <div class="item slider_height bg_banner2">
+                  <h3 data-animation-in="flipInY" data-animation-out="animate-out fadeOutUp" class="text-light pb-4" style="font-weight: 700">Chairman and Vice-Chairman of ASB, ICAI</h3>
+                  <div class="d-flex justifyEvenly">
+                     <div data-animation-in="flipInX" data-animation-out="animate-out fadeOutLeft" class="text-light text-center">
+                        <img src="http://35.154.239.225/assets/img/Pramodjain.jpg"  class="img_00">
+                        <h5 class="text-center titleNm">CA. Pramod Jain,  <br>Chairman, ASB, ICAI</h5>
+                     </div>
+                     <div data-animation-in="flipInX" data-animation-out="animate-out fadeOutLeft" class="text-light text-center">
+                        <img src="http://35.154.239.225/assets/img/CA.-Abhay-Kumar-Chhajed.jpg" class="img_00">
+                        <h5 class="text-center titleNm">CA. Abhay Chhajed <br>Vice-Chairman, ASB, ICAI</h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="item slider_height">
+                
+                <a href="https://twitter.com/asbicai" target="_blank"> <img src="http://35.154.239.225/assets/img/webiste_twitter_bannerhyperlink.png" class="img_00"></a>
+
+        </div>
+
+               <div class="item slider_height bg_banner">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 m-auto">
+                  <h2 data-animation-in="flipInY" data-animation-out="animate-out fadeOutUp" class="text-light" style="font-weight: 700;">
+                    Mission: Develop High Quality Globally acceptable Accounting Standards.
+                  </h2>
+              </div>
+          </div>
+               </div>
+            <div class="item slider_height bg_banner2">
+                  <div class="row">
+                    <div class="col-md-8 col-sm-12 m-auto">
+                       <h2 data-animation-in="flipInY" data-animation-out="animate-out fadeOutUp" class="text-light pl-3 pr-3" style="font-weight: 700;">Engage with various regulators like MCA, RBI, IRDAI, SEBI on accounting and related matters.</h2>
+                    </div>
+                  </div>
+            </div>
+
+              <div class="item slider_height bg_banner3">
+                  
+            </div>
+
+               <div class="item slider_height bg_banner4">
+                <a href=""> <img src="http://35.154.239.225/assets/img/2nd_day_celebration.jpeg" class="img_00"></a>
+                  
+            </div>
+      
+
+       
+
+
+
+
+            </div>
+                 
+       </div>
+
+
+
+            </div> 
+         </div>
+      </div>
+   </div>
+</section>
+
+<main id="main"> -->
+
+    <!-- <div class="bg_grdnt p-4 text-center" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+   <h6 class="text-light">ICAI-SERVICES</h6>
+</div> -->
+
+    <!-- <section class="pt-3 collapse " id="collapseExample">
+      <div class="container-fluid">
+
+               <div class="row">
+                  <div class="col-lg-2 m-auto col-md-3 col-sm-6 text-center">
+                     <div class="animated bounce">
+                      <a href="https://icai-cds.org/" target="_blank">
+                       <img class="animation-pop" src="http://frrb.icai.org/wp-content/uploads/2021/03/cds.jpg" alt="cds" loading="lazy" width="101" height="100">
+                      </a>          
+                    </div>
+                      <p class="serviceTitle">For Ordering Publications</p>  
+                  </div>
+                  <div class="col-lg-2 m-auto col-md-3 col-sm-6 text-center">
+                     <div class="animated bounce">
+                      <a href="https://learning.icai.org/iDH/icai/" >
+                       <img class="animation-pop" src="http://frrb.icai.org/wp-content/uploads/2021/03/digital-learning-hub.jpg" alt="Digital Learning Hub" loading="lazy" width="101" height="100">
+                      </a>          
+                    </div>
+                      <p class="serviceTitle">Digital Learning Hub</p>  
+                  </div>
+
+
+                   <div class="col-lg-2 m-auto col-md-3 col-sm-6 text-center">
+                     <div class="animated bounce">
+                      <a href="https://icaitv.com/category.php?cat_id=30" target="_blank">
+                       <img class="animation-pop" src="http://frrb.icai.org/wp-content/uploads/2021/03/icai-tv.jpg" alt="ICAI TV" loading="lazy" width="101" height="100">
+                      </a>          
+                    </div>
+                      <a href="https://icaitv.com/category.php?cat_id=30"><p class="serviceTitle">ASB-ICAI TV</p></a> 
+                  </div> 
+
+
+                 <div class="col-lg-2 m-auto col-md-3 col-sm-6 text-center">
+                     <div class="animated bounce">
+                      <a href="https://help.icai.org/">
+                       <img class="animation-pop" src="http://frrb.icai.org/wp-content/uploads/2021/03/eSahaayataa.jpg" alt="ESahaayataa
+                        " loading="lazy" width="101" height="100">
+                      </a>          
+                    </div>
+                      <p class="serviceTitle">E- Sahaayataa Portal </p>  
+                  </div>               
+               </div>
+            </div>
+  
+   </section> -->
+
+
+    <!-- ======= Latest News Section =======  -->
+    <!-- <section class="section-news section-t8">
+      <div class="container">
+         <div class="row mb-5">
+             <div class="col-lg-3 col-md-6 p-2 ">
+                <a href="http://35.154.239.225/index.php/web/home/knowledge_gateway">
+                <div class="p-2 f1gb tile4">
+                      <h4 class="text-light mb-0 ">
+                         Knowledge Gateway 
+                    </h4>
+                </div>
+                  <div class="card-box-b card-shadow news-box">                      
+                     <div class="img-box-b">
+                        <img src="http://35.154.239.225/assets/img/tile1.webp" alt="" class="img-b img-fluid">
+                     </div>
+                  </div>
+              </a>
+             </div>
+
+              <div class="col-lg-3 col-md-6 p-2">
+                <a href="http://35.154.239.225/index.php/web/home/knowledge_dissemination_activities">
+                 <div class="p-2 f2gb tile4">
+                      <h4 class="text-light mb-0 ">
+                        Knowledge Dissemination Activities
+                    </h4>
+                </div>
+                  <div class="card-box-b card-shadow news-box">
+                      
+                     <div class="img-box-b">
+                        <img src="http://35.154.239.225/assets/img/tile2.webp" alt="" class="img-b img-fluid">
+                     </div>
+                  </div>
+              </a>
+             </div>
+
+
+              <div class="col-lg-3 col-md-6 p-2">
+                <a href="http://35.154.239.225/index.php/web/home/open_for_comments">
+                 <div class="p-2 f3gb tile4">
+                      <h4 class="text-light mb-0 ">
+                       Open for comments
+                    </h4>
+                </div>
+                  <div class="card-box-b card-shadow news-box">                      
+                     <div class="img-box-b">
+                        <img src="http://35.154.239.225/assets/img/tile.3.webp" alt="" class="img-b img-fluid">
+                     </div>                   
+                  </div>
+              </a>
+             </div>
+
+              <div class="col-lg-3 col-md-6 p-2">
+                <a href="http://35.154.239.225/index.php/web/home/whats_new">
+                 <div class="p-2 f4gb tile4">
+                      <h4 class="text-light mb-0 ">
+                      What’s new
+                    </h4>
+                </div>
+                  <div class="card-box-b card-shadow news-box">
+                      
+                     <div class="img-box-b">
+                        <img src="http://35.154.239.225/assets/img/tile4.webp" alt="" class="img-b img-fluid">
+                     </div>                     
+                  </div>
+              </a>
+             </div>
+         </div>
+      </div>
+   </section> -->
+    </main>
+    <!-- ======= Footer ======= -->
+    <section class="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 myLable">
+                    <div class="ftrAbt">
+                        <a class="ftrLogo" href="https://www.icai.org">
+                            <img src="https://asb-icai-prod.s3.ap-south-1.amazonaws.com/category_image/654.jpg"
+                                class="img-fluid" alt="">
+                        </a>
+                        <!--*?php echo html_entity_decode($footernote) ?*/-->
+                        <div>
+                            <h6 class="mb-0 text-light">Accounting Standards Board(ASB)</h6>
+                            <small class="text-light f12">The Institute of Chartered Accountants of India<br>
+                                (set up by an Act of Parliament)
+                            </small>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="d-flex col-9 justify-content-between">
+                                <span class="text-white">Visitors Count</span>
+                                <span class="" style="background: #fff;padding: 0px 15px;">23810</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="label">Total Site View : <strong>0000283445</strong></div> -->
+                </div>
+                <div class="col-md-9">
+                    <div class="row ">
+                        <div class="col-md-5 offset-lg-1 ftrCol minFtr">
+                            <h4>QUICK LINKS</h4>
+                            <div class="menu-quick-links-container">
+                                <ul id="menu-quick-links" class="custom_link">
+                                    <!--   <li><a href="https://www.icai.org/">www.icai.org</a></li> -->
+                                    <li><a href="https://asb.icai.org/quiz_admin/"><b>ICAI-ASB Quiz</b></a></li>
+                                    <li><a href="https://www.wcoa2022mumbai.org">WCOA</a></li>
+                                    <li><a href="https://www.ifrs.org/">IASB</a></li>
+                                    <li><a href="https://www.ifac.org/">IFAC</a></li>
+                                    <li><a href="http://www.esafa.org/">SAFA</a></li>
+                                    <li><a href="https://in.xbrl.org/">XBRL India</a></li>
+                                    <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html">Ministry of
+                                            Corporate Affairs</a></li>
+                                    <li><a href="https://www.sebi.gov.in/">Securities and Exchange Board of India</a>
+                                    </li>
+                                    <li><a href="http://35.154.239.225/index.php/web/home/archi_section">Archive
+                                            Section</a></li>
+                                    <li><a href="javascript:void(0)">Site Map</a></li>
+                                    <li><a href="https://www.icai.org/new_post.html?post_id=16566">Terms &
+                                            Conditions</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ftrCol minFtr">
+                            <h4>GET IN TOUCH</h4>
+                            <ul class="Ftrcontact">
+                                <li><i class="bi bi-geo-alt"></i>Secretary to the Board: CA. Parminder Kaur</li>
+                                <li><i class="bi bi-phone"></i>
+                                    <a href="tel:011-30110464">011-30110464</a>
+                                </li>
+                                <li>
+                                    <i class="bi bi-envelope"></i>
+                                    <a href="mailto:asb@icai.in">asb[at]icai[dot]in</a>
+                                    <a href="mailto:parminder@icai.in">parminder[at]icai[dot]in</a>
+                                    <a href="mailto:indas@icai.in">indas[at]icai[dot]in</a>
+                                    <a href="mailto:indascourse@icai.in">indascourse[at]icai[dot]in</a>
+                                </li>
+
+                            </ul>
+                            <div class="ftrSocial">
+                                <ul class="d-flex">
+                                    <li><a target="_blank" href="https://www.facebook.com/theicai"><i
+                                                class="bi bi-facebook"></i></a></li>
+                                    <li><a target="_blank" href="https://www.instagram.com/icaiorg/"><i
+                                                class="bi bi-instagram"></i></a></li>
+                                    <li><a target="_blank"
+                                            href="https://www.linkedin.com/authwall?trk=qf&originalReferer=https://www.icai.org/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fschool%2Ftheicai%2F"><span
+                                                class="bi bi-linkedin"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--   <div class="col-md-3 ftrCol minFtr">
+                <h4>FOLLOW US</h4>
+                  <div class="ftrSocial">
+              <ul class="d-flex">
+                <li><a target="_blank" href="https://www.facebook.com/theicai"><i class="bi bi-facebook"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/icaiorg/"><i class="bi bi-instagram"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/authwall?trk=qf&originalReferer=https://www.icai.org/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fschool%2Ftheicai%2F"><span class="bi bi-linkedin"></span></a></li>
+              </ul>
+            </div>
+          
+                  </div>  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ftrBtm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 m-auto">
+                        <div class="ftrBtmInr">
+                            <div class="cpy">
+                                Copyright
+                                <script type="text/javascript">document.write(new Date().getFullYear())</script>. All
+                                rights reserved to the ICAI. No part of the contents available in any ICAI publication
+                                may be reproduced, stored in a retrieval system, or transmitted, in any form, or by any
+                                means, electronic, mechanical, photocopying, recording, or otherwise, without prior
+                                permission, in writing, from the Institute.
+                            </div>
+                            <div class="cpLinks">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+    <script src="https://kit.fontawesome.com/7f18f83a22.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Vendor JS Files -->
+
+    <script src="http://35.154.239.225/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="http://35.154.239.225/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="http://35.154.239.225/assets/js/main.js"></script>
+    <!-- <script src="http://35.154.239.225/assets/js/owl.carousel.min.js"></script>
+<script src="http://35.154.239.225/assets/vendor/bootstrap/js/owl.carousel.min.js"></script>  -->
+
+    <script>
+        $('.banner-carousel').owlCarousel({
+            loop: true,
+            dots: true,
+            responsiveClass: true,
+            autoplayTimeout: 4000,
+            smartSpeed: 800,
+            nav: true,
+            margin: 10,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+    </script>
+    <script>
+        $('.event-carousel').owlCarousel({
+            loop: true,
+            dots: true,
+            responsiveClass: true,
+            autoplayTimeout: 4000,
+            smartSpeed: 800,
+            nav: true,
+            margin: 10,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+    </script>
+
+    <!-- marquee -->
+    <!-- <script>
+    $(document).ready(function () {
+          const sections = $('.pg-reviews-card');
+          let currentIndex = 0;
+    
+          function highlightSection() {
+              const marquee = document.getElementById('marquee');
+              const marqueeTop = marquee.getBoundingClientRect().top;
+              const marqueeBottom = marqueeTop + marquee.getBoundingClientRect().height;
+    
+              sections.removeClass('pg-highlight');
+    
+              for (let i = 0; i < sections.length; i++) {
+                  const sectionTop = sections[i].getBoundingClientRect().top;
+                  const sectionBottom = sectionTop + sections[i].getBoundingClientRect().height;
+    
+                  if (sectionTop <= marqueeBottom && sectionBottom >= marqueeTop) {
+                      currentIndex = i;
+                      break;
+                  }
+              }
+    
+              sections.eq(currentIndex).addClass('pg-highlight');
+          }
+    
+          // Call highlightSection on scroll event
+          $('#marquee').on('scroll', highlightSection);
+    
+          // Initialize highlighting
+          highlightSection();
+    
+          // Interval to check and update highlighting based on scroll
+          setInterval(function () {
+              highlightSection();
+          }, 200); // Adjust the interval as needed
+      });
+    </script> -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var owl = $('.banner-slider');
+
+            //   // Carousel initialization
+            owl.owlCarousel({
+                loop: true,
+                margin: 0,
+                navSpeed: 500,
+                nav: true,
+                autoplay: true,
+                rewind: true,
+                items: 1,
+                navText: [
+                    '<a class="class_btn_back_ar"><i class="bi bi-caret-left-fill"></i></a>',
+                    '<a class="class_btn_next_ar"><i class="bi bi-caret-right-fill"></i></a>'
+                ],
+                responsive: {
+                    // breakpoint from 0 up
+                    0: {
+                        nav: false,
+
+                    },
+                    // breakpoint from 480 up
+                    992: {
+                        nav: true,
+                    },
+                }
+
+            });
+
+            function setAnimation(_elem, _InOut) {
+                var animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+                _elem.each(function () {
+                    var $elem = $(this);
+                    var $animationType = 'animated ' + $elem.data('animation-' + _InOut);
+
+                    $elem.addClass($animationType).one(animationEndEvent, function () {
+                        $elem.removeClass($animationType); // remove animate.css Class at the end of the animations
+                    });
+                });
+            }
+
+            // Fired before current slide change
+            owl.on('change.owl.carousel', function (event) {
+                var $currentItem = $('.owl-item', owl).eq(event.item.index);
+                var $elemsToanim = $currentItem.find("[data-animation-out]");
+                setAnimation($elemsToanim, 'out');
+            });
+
+            // Fired after current slide has been changed
+            var round = 0;
+            owl.on('changed.owl.carousel', function (event) {
+
+                var $currentItem = $('.owl-item', owl).eq(event.item.index);
+                var $elemsToanim = $currentItem.find("[data-animation-in]");
+
+                setAnimation($elemsToanim, 'in');
+            })
+
+            owl.on('translated.owl.carousel', function (event) {
+                // console.log (event.item.index, event.page.count);
+
+                if (event.item.index == (event.page.count - 1)) {
+                    if (round < 1) {
+                        round++
+                        //  console.log (round);
+                    } else {
+                        owl.trigger('stop.owl.autoplay');
+                        var owlData = owl.data('owl.carousel');
+                        owlData.settings.autoplay = false; //don't know if both are necessary
+                        owlData.options.autoplay = false;
+                        owl.trigger('refresh.owl.carousel');
+                    }
+                }
+            });
+
+        });
+    </script>
+
+
+
+</body>
+
+</html>
