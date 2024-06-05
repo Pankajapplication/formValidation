@@ -1,7 +1,6 @@
 let form = document.getElementById('formValidate');
 let fName,lName,uEmail,uEmailFormat,uMob;
 fName = document.getElementById('fName');
-    console.log(fName);
     lName = document.getElementById('lName');
     uEmail = document.getElementById('uEmail');
     uMob = document.getElementById('uMob');
@@ -10,7 +9,8 @@ form.addEventListener('submit', function(e){
     if(fName.value === ''){
         fName.nextElementSibling.textContent = "Enter First Name";
     }else{
-        fName.nextElementSibling.textContent = "";
+        fName.nextElementSibling.textContent = "sucess";
+        fName.style.borderColor  = "green";
     }
     if(lName.value === ''){
         lName.nextElementSibling.textContent = "Enter Last Name";
